@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!!</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Indica a definição do estilo -->
+    <style>
+        /* Asterisco indica que irá mexer em todos os elementos da página. */
+        * {
+            /* Margem externa */
+            margin: 0;
+
+            /* Margem interna */
+            padding: 0;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            scroll-behavior: smooth;
+        }
+
+        /* Modificando o cabeçalho */
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header>img {
+            height: 100%;
+            width: auto;
+        }
+
+        header > nav {
+            margin-top: 15px;
+            display: inline-block;
+            float: right;
+        }
+
+        header > nav > ul {
+            list-style: none;
+            display: inline-block;
+        }
+
+        header > nav > ul > li {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        header > nav > ul li > a {
+            text-decoration: none;
+            color: #000;
+            /*varia de 100 até 900 */
+            font-weight: bold;
+            transition: 0.5s font-size, 0.7s color;
+        }
+
+        header > nav > ul li > a:hover {
+            background-color: #000;
+            color: #fff;
+            font-size: 1.2em;
+            padding: 15px;
+        }
+        
+        main {
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        main > h1  {
+            margin-bottom: 20px;
+        }
+
+        main > p {
+            margin-bottom: 10px;
+            text-indent: 20px;
+            text-align: justify;
+            scroll-margin-top: 85px;
+        }
+        main > p#se{
+            text-align: center;
+        }
+        main > p#terceiro{
+            text-align: left;
+        }
+        main > p#qua{
+            text-align: right;
+        }
+        main > p#cin{
+            text-align: start;
+        }
+        
+        footer{
+            background-color: red;
+            text-align: center;
+            color: black;
+            padding: 10px;
+        }
+        footer > nav {
+            margin-top: 15px;
+            display: inline-block;
+
+        }
+
+        footer > nav > ul {
+            list-style: none;
+            display: inline-block;
+        }
+
+        footer > nav > ul > li {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        footer > nav > ul > a {
+            text-decoration: none;
+            color: #000;
+            /*varia de 100 até 900 */
+            font-weight: bold;
+            transition: 0.5s font-size, 0.7s color;
+        }
+
+        footer > nav > ul > a:hover {
+            background-color: red;
+            color: #fff;
+            font-size: 1.2em;
+            padding: 15px;
+        }
+        
+        /* defina um alinhamento diferente para cada alinhamento*/
+        
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Adidas_logo.png" alt="Logo da página">
+
+        <!-- Tag de navegação -->
+        <nav>
+            <!-- Lista não ordenada -->
+            <ul>
+                <!-- Item da lista -->
+                <li>
+
+                    <!-- Âncora, faz um link para dentro e fora da página -->
+                    <a href="#">Voltar ao topo</a>
+                </li>
+                <li>
+                    <a href="#primeiro">Primeiro parágrafo</a>
+                </li>
+                <li>
+                    <a href="#terceiro">Terceiro parágrafo</a>
+                </li>
+                <li><a href="https://www.google.com" target="_blank">Link externo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Níveis de título -->
+        <h1>Hello, World!!</h1>
+       <!-- <h2>Título nível 2</h2>
+        <h3>Título nível 3</h3>
+        <h4>Título nível 4</h4>
+        <h5>Título nível 5</h5>
+        <h6>Título nível 6</h6> -->
+
+        <!-- Parágrafo -->
+        <p  id="primeiro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis urna ligula, dictum a iaculis eu,
+            vestibulum
+            quis arcu. Donec sagittis vel velit sit amet hendrerit. Curabitur consequat, felis vitae pellentesque
+            aliquet, ligula lectus blandit risus, quis vulputate erat tortor dictum sapien. Pellentesque fringilla eros
+            vel ex tempus, eget dictum elit laoreet. Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Fusce vitae vehicula tellus. Cras condimentum ante ligula, vitae tempus sem tempus
+            a. Donec convallis elementum aliquam. Mauris ut sagittis nunc, vitae elementum nulla. Morbi vitae neque
+            pellentesque sapien pulvinar lobortis. Quisque felis sapien, luctus eu efficitur eget, facilisis eget ipsum.
+            Vivamus faucibus elit non ante semper, et faucibus felis feugiat.</p>
+
+        <p id="se">In elementum ante finibus, facilisis turpis vel, consectetur eros. Sed ac ultricies lacus, sit amet fringilla
+            nisi. Nullam aliquet nibh sit amet mauris vulputate facilisis. Proin quis facilisis ligula. Nunc malesuada
+            ullamcorper augue id volutpat. Donec vel ornare lectus, eu placerat purus. Vivamus et erat iaculis, blandit
+            diam eu, congue sem. Pellentesque orci lorem, viverra at urna consectetur, tempus blandit ante. Nam
+            elementum quam quis arcu elementum pharetra.
+        </p>
+
+        <p id="terceiro">In ac varius tortor, id tincidunt enim. Etiam eget ipsum a lectus laoreet varius in ac justo.
+            Vestibulum
+            condimentum ipsum non massa finibus, in gravida ante bibendum. Vivamus consequat massa non nisl interdum
+            pretium. Proin sed laoreet velit, sed sollicitudin ligula. Donec laoreet, nibh sit amet facilisis tincidunt,
+            enim justo eleifend nibh, id eleifend velit nisl ut lacus. Nullam egestas in neque eu aliquet. Nulla magna
+            arcu, laoreet et tincidunt in, ornare eu libero. Proin commodo feugiat urna ac blandit.
+        </p>
+
+        <p id="qua">
+            Quisque porttitor eget velit in commodo. Integer semper venenatis suscipit. Aenean at venenatis quam, vel
+            semper magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+            posuere viverra ante, vitae euismod neque suscipit ut. Morbi quis ante eget magna consequat efficitur in
+            viverra libero. Sed bibendum euismod mollis. Vestibulum tempus aliquam enim, vel egestas odio blandit vel.
+        </p>
+
+        <p id="cin">
+            Aenean commodo nec purus quis malesuada. Maecenas dolor neque, iaculis hendrerit arcu eget, eleifend aliquam
+            arcu. Praesent suscipit consequat ipsum, at pellentesque orci congue et. Curabitur sit amet magna non orci
+            pulvinar semper. Praesent condimentum leo sed hendrerit condimentum. Phasellus sit amet tincidunt erat.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et
+            turpis pulvinar odio auctor molestie. Maecenas fermentum, ipsum id sagittis commodo, eros neque tincidunt
+            erat, ut ullamcorper erat velit quis ex. Duis eget est mi. In vulputate fermentum mauris, vel euismod felis
+            facilisis sit amet. Donec nec sem tincidunt nunc hendrerit rutrum. Pellentesque ultrices leo at euismod
+            consequat. Pellentesque fringilla lorem ac dui condimentum, nec rhoncus sem ullamcorper.
+        </p>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <nav>
+            <ul>
+                    <a href="ola.html">&copy; Todos os direitos reservados
+                        
+                    </a>
+
+            </ul>
+        </nav>
+        
+    </footer>
+
+</body>
+
+</html>
